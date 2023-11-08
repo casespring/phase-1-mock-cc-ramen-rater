@@ -258,7 +258,7 @@ fetch("http://localhost:3000/ramens")  // my code with functions
 
         form.addEventListener('submit', e => {
             e.preventDefault();
-            console.log(e.target);
+            console.log(e.target[cart-amount].value);
 
             let newRamen = {
                 name: e.target.name.value,
